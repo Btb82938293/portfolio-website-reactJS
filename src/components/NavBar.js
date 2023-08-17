@@ -1,24 +1,10 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-
-
 export default function NavBar() {
     return (
-      <>
-      <Navbar fixed="top" bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">My website</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">About me</Nav.Link>
-            <Nav.Link href="#features">Projects</Nav.Link>
-            <Nav.Link href="#pricing">Contacts</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <br />
-
-    </>
+      <ul className="nav-bar-items">
+        <li className="nav-bar-item logo"><a href="#">My Website</a></li>
+        <li className="nav-bar-item"><a href="#">About me</a></li>
+        <li className="nav-bar-item"><a href="#">Projects</a></li>
+        <li className="nav-bar-item"><a href="#">Contacts</a></li>
+      </ul>
     )
 }

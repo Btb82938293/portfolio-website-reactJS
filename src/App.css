@@ -1,5 +1,33 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.nav-bar-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+  background-color: black;
+  position: sticky;
+}
+
+.nav-bar-item {
+  list-style: none;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.nav-bar-items a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-items a:hover {
+  border-bottom: 1px solid white;
+}
+
+
