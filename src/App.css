@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar-items {
@@ -26,8 +29,28 @@
   color: white;
 }
 
-.nav-bar-items a:hover {
+.nav-bar-item:hover {
   border-bottom: 1px solid white;
+  transition: .3s;
 }
 
+.type-el {
+  font-size: 1.2rem;
+}
+
+main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
