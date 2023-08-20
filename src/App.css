@@ -7,6 +7,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.main-text {
+  font-size: 4rem;
+}
+
+
 .nav-bar-items {
   display: flex;
   justify-content: space-around;
@@ -14,9 +19,11 @@
   height: 5em;
   background-color: black;
   position: sticky;
+  margin: 0;
 }
 
-.nav-bar-item {
+.nav-bar-item,
+.drop-down-item {
   list-style: none;
 }
 
@@ -24,14 +31,50 @@
   font-size: 1.2rem;
 }
 
-.nav-bar-items a {
+.hamburger {
+  color: white;
+}
+
+.nav-bar-items a,
+.drop-down-menu a {
   text-decoration: none;
   color: white;
 }
 
-.nav-bar-item:hover {
+.drop-down-menu {
+  border: 1px solid black;
+  height: 81vh;
+  width: 100vw;
+  background: black;
+  position: absolute;
+  top: -240vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.active {
+  transition: .3s;
+  top: 5em;
+}
+
+.drop-down-item {
+  margin-top: 1.5em;
+}
+
+.nav-bar-item:hover,
+.drop-down-item:hover {
   border-bottom: 1px solid white;
   transition: .3s;
+}
+
+.hamburger:hover {
+  border-bottom: none;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .type-el {
@@ -44,6 +87,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 2em;
+
 }
 
 .footer {
