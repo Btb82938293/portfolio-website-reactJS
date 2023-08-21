@@ -8,9 +8,10 @@ import Type from './Type';
 
 export default function Home() {
   return (
+    <div className="container">
     <main>
-        <h1><span className="main-text">Hello!</span><br></br>I'm Dmitry Zasypkin<span className="icon">👋</span></h1>
-        <div style={{ textAlign: "left" }} className="type-el"><Type /></div>
+        <h1><span className="main-text">Hello!</span><br></br>I'm Dmitry Zasypkin<span className="icon"> 👋</span> <br></br><span className="type-el"><Type /></span></h1>
     </main>
+    </div>
   );
 }
