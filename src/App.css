@@ -28,8 +28,18 @@ main h1 {
 }
 
 .nav-bar-item,
-.drop-down-item {
+.drop-down-item,
+.menu-item,
+.footer-item {
   list-style: none;
+}
+
+.nav-bar-item {
+  display: none;
+}
+
+.menu-item {
+  margin-top: 1em;
 }
 
 .logo {
@@ -38,10 +48,12 @@ main h1 {
 
 .hamburger {
   color: white;
+  display: inline;
 }
 
 .nav-bar-items a,
-.drop-down-menu a {
+.drop-down-menu a,
+.menu-item {
   text-decoration: none;
   color: white;
 }
@@ -71,10 +83,12 @@ main h1 {
 }
 
 .nav-bar-item:hover,
-.drop-down-item:hover {
+.drop-down-item:hover,
+.menu-item:hover {
   border-bottom: 1px solid white;
   transition: .3s;
 }
+
 
 .logo:hover {
   border: none;
@@ -188,8 +202,16 @@ main {
     justify-content: space-around;
   }
 
+  .nav-bar-item {
+    display: inline;
+  }
+
   .logo {
     font-size: 1.5rem;
+    display: inline;
+  }
+  .hamburger {
+    display: none;
   }
 }
 

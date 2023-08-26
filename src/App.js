@@ -1,10 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useState, useEffect} from "react"
-import NavBar2 from './components/NavBar';
+import NavBar from './components/NavBar';
 import Home from "./components/Home"
 import Footer from './components/Footer';
 import Projects from './components/Projects/Projects';
+import About from './components/About me/About';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,17 +15,13 @@ import {
 
 function App() {
   return (
-    // <div className="App">
-    //  <NavBar2 />
-    //  <Home />
-    //  <Footer/>
-    // </div>
     <Router>
       <div className="App">
-        <NavBar2 />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>
