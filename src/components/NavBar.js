@@ -6,10 +6,17 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [isShown, setIsShown] = useState(false)
+    const [isLinkClicked, setIsLinkClicked] = useState(false)
     const handleClick = () => {
       setIsShown(prevIsShown => !prevIsShown)
     }
-    console.log(window.innerWidth)
+    const handleLinkClick = () => {
+      setIsLinkClicked(true)
+      setIsShown(prevIsShown => !prevIsShown)
+      setTimeout(() => {
+        setIsLinkClicked(false)
+      },300)
+    }
     return (
       <>
       <ul className="nav-bar-items">
@@ -19,10 +26,10 @@ export default function NavBar() {
         <li className="nav-bar-item"><Link to="/projects">Projects</Link></li>
         <li onClick={handleClick} className="nav-bar-item hamburger">{!isShown ? <RxHamburgerMenu /> : <AiOutlineClose />}</li>
       </ul>
-      <ul className={!isShown ? "drop-down-menu" : "drop-down-menu active"}>
-        <li className="menu-item"><Link to="/">Home</Link></li>
-        <li className="menu-item"><Link to="/about">About me</Link></li>
-        <li className="menu-item"><Link to="/projects">Projects</Link></li>
+      <ul className={isShown && !isLinkClicked ? "drop-down-menu active" : "drop-down-menu"}>
+        <li onClick={handleLinkClick} className="menu-item"><Link to="/">Home</Link></li>
+        <li onClick={handleLinkClick} className="menu-item"><Link to="/about">About me</Link></li>
+        <li onClick={handleLinkClick} className="menu-item"><Link to="/projects">Projects</Link></li>
       </ul>
       </>
     )
