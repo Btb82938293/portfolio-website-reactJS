@@ -3,13 +3,18 @@ import meImg from "../Assets/meImg.PNG"
 import { BsInstagram } from 'react-icons/bs';
 import { SlSocialVkontakte } from 'react-icons/sl';
 import { BsTelegram } from 'react-icons/bs';
+import compImg from "../Assets/compImg.jpg"
 
 
 export default function Home() {
   return (
     <div className="container">
     <main>
-        <h1><span className="main-text">Hello!</span><br></br>I'm <span className="name colored">Dmitry Zasypkin</span> <span className="icon wave">👋</span> <br></br><span className="type-el"><Type /></span></h1>
+        <h1><span className="main-text">Hello!</span>
+        <br></br>I'm <span className="name colored">Dmitry Zasypkin </span>
+        <span className="icon wave">👋</span> <br></br><span className="type-el"><Type />
+        </span></h1>
+        <img className="main-comp-img" src={compImg}></img>
     </main>
     <section className="home-section">
       <h1>LET ME <span className="colored">INTRODUCE </span> MYSELF</h1>

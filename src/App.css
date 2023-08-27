@@ -111,7 +111,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10em;
+  padding-top: 5em;
+}
+
+.main-comp-img {
+  margin-top: 5em;
+  display: block;
+  width: 80%;
 }
 
 .home-section {
@@ -292,7 +298,7 @@ main {
 
 @media(min-width: 500px) {
   .main-text {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   main h1 {
     font-size: 2.5rem;
@@ -308,8 +314,17 @@ main {
   main {
     height: 90vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 17em;
+    max-width: 700px;
+    /* border: 1px solid red; */
+  }
+
+  .main-comp-img {
+    display: block;
+    width: 35%;
   }
 
   .home-section {
@@ -318,7 +333,6 @@ main {
 
   .me-img {
     width: 50%;
-    margin-left: 3em;
   }
 
   .home-section-about-me {
