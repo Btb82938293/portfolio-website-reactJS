@@ -60,7 +60,7 @@ main h1 {
 
 .drop-down-menu {
   border: 1px solid black;
-  height: 81vh;
+  height: 40vh;
   width: 100vw;
   background: black;
   position: absolute;
@@ -127,7 +127,7 @@ main {
   color:purple
 }
 
-.colored {
+.name {
   font-weight: 800;
 }
 
@@ -138,6 +138,54 @@ main {
   margin: 0;
   width: 100%;
   padding: 1em;
+}
+
+.projects-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-main h1 {
+  margin-bottom: 1em;
+  font-weight: 800;
+}
+
+.projects-text {
+  text-align: center;
+  font-size: .9rem;
+}
+
+.project {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:1em;
+  margin: 1em 0;
+}
+
+.project-name {
+  margin: 1em;
+}
+
+.project-description {
+  margin: 0;
 }
 
 .icon {
@@ -212,6 +260,20 @@ main {
   }
   .hamburger {
     display: none;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+  .project {
+    margin: 1em;
+    width: 28%;
+  }
+  .projects-text {
+    font-size: 1.1rem;
   }
 }
 
