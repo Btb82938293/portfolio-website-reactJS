@@ -177,7 +177,10 @@ main {
 
 .colored,
 .type-el {
-  color:purple
+  color: rgb(150, 80, 80);
+  font-weight: 800;
+  /* border-bottom: 1px solid gray; */
+  font-style: italic;
 }
 
 .name {

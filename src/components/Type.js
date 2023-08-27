@@ -8,7 +8,6 @@ export default function Type() {
         strings: [
           "React Developer",
           "Freelancer",
-          "Teacher of English",
         ],
         autoStart: true,
         loop: true,
