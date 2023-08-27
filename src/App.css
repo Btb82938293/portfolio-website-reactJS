@@ -22,9 +22,11 @@ main h1 {
   align-items: center;
   height: 10vh;
   background-color: black;
-  position: sticky;
+  /* position: fixed; */
+  width: 100%;
   font-size: .8rem;
   padding: 1em;
+  z-index: 1;
 }
 
 .nav-bar-item,
@@ -40,10 +42,6 @@ main h1 {
 
 .menu-item {
   margin-top: 1em;
-}
-
-.logo {
-  font-size: 1rem;
 }
 
 .hamburger {
@@ -123,6 +121,12 @@ main {
   align-items: center;
 }
 
+.home-section-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .home-section h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -168,6 +172,17 @@ main {
 .project-img {
   display: block;
   width: 100%;
+}
+.me-img {
+  margin-top: 1em;
+  display: block;
+  width: 70%;
+  border-radius: 50%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: purple;
 }
 
 .projects-container {
@@ -263,6 +278,20 @@ main {
     align-items: center;
   }
 
+  .home-section {
+    max-width: 700px;
+  }
+
+  .me-img {
+    width: 50%;
+    margin-left: 3em;
+  }
+
+  .home-section-about-me {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .nav-bar-items {
     font-size: 1rem;
     justify-content: space-around;
@@ -273,8 +302,9 @@ main {
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline;
+    color: purple;
   }
   .hamburger {
     display: none;

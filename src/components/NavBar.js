@@ -20,7 +20,7 @@ export default function NavBar() {
     return (
       <>
       <ul className="nav-bar-items">
-        <li className="logo"><Link to="/">My Website</Link></li>
+        <li className="logo"><Link to="/">DZ</Link></li>
         <li className="nav-bar-item"><Link to="/">Home</Link></li>
         <li className="nav-bar-item"><Link to="/about">About me</Link></li>
         <li className="nav-bar-item"><Link to="/projects">Projects</Link></li>
