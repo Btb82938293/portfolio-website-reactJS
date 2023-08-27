@@ -1,7 +1,7 @@
 import Type from './Type';
 import meImg from "../Assets/meImg.PNG"
 import { BsInstagram } from 'react-icons/bs';
-import { SlSocialVkontakte } from 'react-icons/bs';
+import { SlSocialVkontakte } from 'react-icons/sl';
 import { BsTelegram } from 'react-icons/bs';
 
 
@@ -25,12 +25,11 @@ export default function Home() {
       </div>
       <div className="home-section-contacts">
         <h1>FIND ME ON</h1>
-        <p>Feel free to connect with me</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <p className="colored">Feel free to connect with me</p>
+        <ul className="home-section-icons">
+          <li className="home-section-icon"><BsInstagram/></li>
+          <li className="home-section-icon"><SlSocialVkontakte/></li>
+          <li className="home-section-icon"><BsTelegram/></li>
         </ul>
       </div>
     </section>
