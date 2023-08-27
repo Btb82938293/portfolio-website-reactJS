@@ -8,13 +8,13 @@ export default function Home() {
     </main>
     <section className="home-section">
       <h1>LET ME <span className="colored">INTRODUCE </span> MYSELF</h1>
-      <p>I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️<br></br>
-
-I am fluent in Javascript.
-<br></br>
-My field of Interests are building new  Web Technologies and Products.
-<br></br>
-Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js.</p>
+      <div className="home-section-description">
+      <p>I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️</p>
+      <p>I am fluent in <span className="colored">Javascript</span>.</p>
+      <p>My field of Interests are building new  <span className="colored">Web Technologies and Products</span>.</p>
+      <p>Whenever possible, I also apply my passion for developing products with <span className="colored">Node.js</span> 
+        and <span className="colored">Modern Javascript Library and Frameworks</span>  like <span className="colored">React.js and Next.js</span>.</p>
+      </div>
     </section>
     </div>
   );
