@@ -5,7 +5,6 @@ import NavBar from './components/NavBar';
 import Home from "./components/Home"
 import Footer from './components/Footer';
 import Projects from './components/Projects/Projects';
-import About from './components/About me/About';
 import {
   BrowserRouter as Router,
   Route,
@@ -21,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
         </Routes>
         <Footer />
       </div>
