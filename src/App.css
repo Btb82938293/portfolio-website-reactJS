@@ -8,11 +8,11 @@
 }
 
 .main-text {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 main h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 
@@ -79,7 +79,7 @@ main h1 {
 
 .active {
   transition: .3s;
-  top: 5.3em;
+  top: 4.3em;
 }
 
 .drop-down-item {
@@ -117,13 +117,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1em;
+  /* border: 1px solid red */
 }
 
 .main-comp-img {
-  margin-top: 7em;
+  margin: 1em 0;
   display: block;
-  width: 80%;
+  width: 70%;
 }
 
 .home-section {
