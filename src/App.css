@@ -77,7 +77,7 @@ main h1 {
 
 .active {
   transition: .3s;
-  top: 5em;
+  top: 3.5em;
 }
 
 .drop-down-item {
@@ -111,15 +111,15 @@ main h1 {
 }
 
 main {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5em;
+  padding-top: 1em;
 }
 
 .main-comp-img {
-  margin-top: 5em;
+  margin-top: 7em;
   display: block;
   width: 80%;
 }
@@ -320,12 +320,12 @@ main {
   }
   
   main {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 17em;
+    align-items:flex-start;
+    margin-top: 4em;
+    justify-content: center;
     max-width: 700px;
     /* border: 1px solid red; */
   }
