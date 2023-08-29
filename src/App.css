@@ -5,15 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.25rem;
 }
 
 .main-text {
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 main h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 
@@ -47,11 +46,13 @@ main h1 {
 
 .menu-item {
   margin-top: 1em;
+  font-size: 1.3rem;
 }
 
 .hamburger {
   color: white;
   display: inline;
+  font-size: 1.3rem;
 }
 
 .nav-bar-items a,
@@ -78,7 +79,7 @@ main h1 {
 
 .active {
   transition: .3s;
-  top: 3.5em;
+  top: 5.3em;
 }
 
 .drop-down-item {
@@ -126,6 +127,8 @@ main {
 }
 
 .home-section {
+  /* border: 1px solid red; */
+  margin-top: 1.5em;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -145,7 +148,7 @@ main {
 }
 
 .home-section p {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .home-section-contacts {
@@ -156,8 +159,8 @@ main {
 }
 
 .home-section-contacts h1 {
-  font-size: 1.5rem;
-  margin-bottom: .5em;
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 .home-section-icons {
@@ -170,7 +173,7 @@ main {
 .home-section-icon {
   list-style: none;
   margin: .5em;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: black;
   transition: .5s;
 }
@@ -180,7 +183,7 @@ main {
 }
 
 .type-el {
-  font-size: 1.2rem;
+  font-size: 2.3rem;
   text-align: left;
   display: inline-block;
   margin-top: 1em;
@@ -207,6 +210,10 @@ main {
   color: white;
 }
 
+.footer-item {
+  font-size: 1.3rem;
+}
+
 .projects-main {
   display: flex;
   flex-direction: column;
@@ -227,7 +234,7 @@ main {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: purple;
 }
 
@@ -238,29 +245,31 @@ main {
 }
 
 .projects-main h1 {
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
   font-weight: 800;
 }
 
 .projects-text {
   text-align: center;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .project {
   border: 1px solid black;
   border-radius: 20px;
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:1em;
+  padding:1.5em;
   margin: 1em 0;
 }
 
 .project-name {
   margin: 1em;
+  font-size: 1.5rem;
 }
 
 .project-description {
@@ -303,18 +312,15 @@ main {
 }
 
 @media(min-width: 600px) {
-  html {
-    font-size: 1.5rem;
-  }
   .main-text {
-    font-size: 6rem;
+    font-size: 10rem;
   }
   main h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .type-el {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
   .container {
     justify-content: left;
@@ -324,10 +330,9 @@ main {
     height: 70vh;
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
-    margin-top: 4em;
+    align-items: center;
     justify-content: center;
-    max-width: 700px;
+    max-width: 900px;
     /* border: 1px solid red; */
   }
 
@@ -337,7 +342,13 @@ main {
   }
 
   .home-section {
-    max-width: 700px;
+    max-width: 1000px;
+    margin-top: 8em;
+    /* border: 1px solid red; */
+  }
+
+  .home-section h1 {
+    font-size: 4rem;
   }
 
   .me-img {
@@ -348,15 +359,30 @@ main {
     flex-direction: row;
     justify-content: space-between;
   }
+  .home-section-about-me p {
+    font-size: 1.5rem;
+  }
 
   .home-section-contacts h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 0;
   }
 
+  .home-section-contacts p {
+    font-size: 1.5rem;
+  }
+
+  .home-section-icon {
+    font-size: 3rem;
+  }
+
   .nav-bar-items {
-    font-size: 1rem;
+    font-size: 1.5rem;
     justify-content: space-around;
+  }
+
+  .footer-item {
+    font-size: 1.5rem;
   }
 
   .nav-bar-item {
@@ -364,7 +390,7 @@ main {
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 3rem;
     display: inline;
     color: purple;
   }
@@ -374,13 +400,13 @@ main {
 
   .projects-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     max-width: 700px;
   }
   .project {
-    margin: 1em;
-    width: 28%;
+    margin: 2em 0;
+    width: 40%;
   }
   .projects-text {
     font-size: 1.1rem;
