@@ -16,7 +16,7 @@ export default function Home() {
         </span></h1>
         <img className="main-comp-img" src={compImg}></img>
     </main>
-    <section name="about-me" className="home-section">
+    <section id="about-me" className="home-section">
       <h1>LET ME <span className="colored">INTRODUCE </span> MYSELF</h1>
       <div className="home-section-about-me">
       <div className="home-section-description">
