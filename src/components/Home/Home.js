@@ -21,11 +21,11 @@ export default function Home() {
       <h1>LET ME <span className="home__text-colored">INTRODUCE </span> MYSELF</h1>
       <div className="home__about-me">
       <div className="home__description">
-      <p>I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️</p>
+      <p>Programming has become my passion and I have at least learnt something, I think… 🤷‍♂️</p>
       <p>I am fluent in <span className="home__text-colored">Javascript</span>.</p>
       <p>My field of Interests are building new  <span className="home__text-colored">Web Technologies and Products</span>.</p>
-      <p>Whenever possible, I also apply my passion for developing products with <span className="home__text-colored">Node.js</span> 
-        and <span className="home__text-colored">Modern Javascript Library and Frameworks</span>  like <span className="home__text-colored">React.js and Next.js</span>.</p>
+      <p>Whenever possible, I try to apply my passion for developing products with <span className="home__text-colored">Node.js </span> 
+        and <span className="home__text-colored">Modern Javascript Libraries and Frameworks</span>  like <span className="home__text-colored">React.js and Next.js</span>.</p>
       </div>
       <img className="home__me-img" src={meImg}></img>
       </div>
@@ -33,9 +33,9 @@ export default function Home() {
         <h1>FIND ME ON</h1>
         <p className="home__text-colored">Feel free to connect with me</p>
         <ul className="home__icons">
-          <li className="home__icon"><a href="#"><BsInstagram/></a></li>
-          <li className="home__icon"><a href="#"><SlSocialVkontakte/></a></li>
-          <li className="home__icon"><a href="#"><BsTelegram/></a></li>
+        <li className="home__icon"><a target="_blank" href="https://t.me/teacher8822"><BsTelegram/></a></li>
+          <li className="home__icon"><a target="_blank" href="https://vk.com/winner123"><SlSocialVkontakte/></a></li>
+          <li className="home__icon"><a target="_blank" href="http://instagram.com/btb8293"><BsInstagram/></a></li>
         </ul>
       </div>
     </section>
