@@ -5,16 +5,26 @@ import NavBar from './components/NavBar/NavBar';
 import Home from "./components/Home/Home"
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects';
+import Preloader from "./components/Pre/Pre";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Routes
 } from "react-router-dom";
 
 function App() {
+
+const [load, setLoad] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false)
+    }, 1300)
+  }, [])
+
   return (
     <Router>
+      <Preloader load={load} />
       <div className="App">
         <NavBar />
         <Routes>

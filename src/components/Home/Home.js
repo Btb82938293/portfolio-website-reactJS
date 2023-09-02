@@ -33,9 +33,9 @@ export default function Home() {
         <h1>FIND ME ON</h1>
         <p className="home__text-colored">Feel free to connect with me</p>
         <ul className="home__icons">
-          <li className="home__icon"><BsInstagram/></li>
-          <li className="home__icon"><SlSocialVkontakte/></li>
-          <li className="home__icon"><BsTelegram/></li>
+          <li className="home__icon"><a href="#"><BsInstagram/></a></li>
+          <li className="home__icon"><a href="#"><SlSocialVkontakte/></a></li>
+          <li className="home__icon"><a href="#"><BsTelegram/></a></li>
         </ul>
       </div>
     </section>

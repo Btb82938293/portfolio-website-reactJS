@@ -70,14 +70,14 @@
     align-items: center;
   }
   
-  .home__icon {
+  .home__icon a {
     list-style: none;
     margin: .5em;
     font-size: 2rem;
     color: black;
     transition: .5s;
   }
-  .home__icon:hover {
+  .home__icon a:hover {
     color: purple;
     cursor: pointer;
   }
@@ -197,7 +197,7 @@
         font-size: 1.5rem;
       }
     
-      .home__icon {
+      .home__icon a {
         font-size: 3rem;
       }
   }
