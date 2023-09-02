@@ -21,15 +21,17 @@ export default function NavBar() {
     return (
       <>
       <ul className="nav-bar-items">
+        <div className="nav-bar-items__container">
         <li className="nav-bar-items__logo"><Link to="/">DZ</Link></li>
         <li className="nav-bar-items__item"><Link to="/">Home</Link></li>
-        <li className="nav-bar-items__item"><a href="/#about-me">About me</a></li>
+        <li className="nav-bar-items__item"><a href="/#home__section">About me</a></li>
         <li className="nav-bar-items__item"><Link to="/projects">Projects</Link></li>
         <li onClick={handleClick} className="nav-bar-items__hamburger">{!isShown ? <RxHamburgerMenu /> : <AiOutlineClose />}</li>
+        </div>
       </ul>
       <ul className={isShown && !isLinkClicked ? "nav-bar-items__menu nav-bar-items_active" : "nav-bar-items__menu"}>
         <li onClick={handleLinkClick} className="nav-bar-items__menu-item"><Link to="/">Home</Link></li>
-        <li onClick={handleLinkClick} className="nav-bar-items__menu-item"><a href="/#about-me">About me</a></li>
+        <li onClick={handleLinkClick} className="nav-bar-items__menu-item"><a href="/#home__section">About me</a></li>
         <li onClick={handleLinkClick} className="nav-bar-items__menu-item"><Link to="/projects">Projects</Link></li>
       </ul>
       </>
