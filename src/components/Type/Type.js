@@ -1,6 +1,5 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import './Type.css';
 
 export default function Type() {
     return (
