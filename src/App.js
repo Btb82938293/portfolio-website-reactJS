@@ -1,9 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, {useState, useEffect} from "react"
-import NavBar from './components/NavBar';
-import Home from "./components/Home"
-import Footer from './components/Footer';
+import NavBar from './components/NavBar/NavBar';
+import Home from "./components/Home/Home"
+import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects';
 import {
   BrowserRouter as Router,
